@@ -1,0 +1,98 @@
+.modaldel_container{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.abre_mod{
+    display: flex;
+    animation: abremod 1s forwards;
+    justify-content: center;
+    align-items: center;
+}
+
+.modaldel_in {
+    display: none;
+    opacity: 0;
+    width: 30%;
+    background-color: #fff;
+    position: absolute;
+    padding: 2rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.modaldel_in h4 {
+    text-align: center;
+    word-break: break-word;
+}
+.modaldel_in span {
+    color: var(--cor-principal);
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.abre_modin{
+    display: flex;
+    animation: abremod 1s forwards;
+    animation-delay: .5s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+
+.modal_botoes button {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    border: 1px solid #a80532!important;
+    font-size: .92rem!important;
+    text-transform: uppercase!important;
+    border-radius: 5px!important;
+    padding: 0.3rem 1rem!important;
+    cursor: pointer!important;
+    margin: 0!important;
+    color: #fff!important;
+    background-color: #a80532!important;
+    transition: all .1s ease-in-out!important;
+}
+.modal_botoes button:hover {
+    color: #fff !important;
+    background-color: var(--cor-footer) !important;
+    transition: all .1s ease-in-out !important;
+    border: 1px solid var(--cor-footer) !important;
+}
+
+
+
+@keyframes abremod {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+
+@media (max-width: 768px){
+
+    .modaldel_in {
+        opacity: 0;
+        width: 90%;
+        background-color: #fff;
+        position: absolute;
+        padding: 2rem;
+        box-shadow: 5px 5px 20px #0003;
+        border-radius: 10px;
+    }
+
+}

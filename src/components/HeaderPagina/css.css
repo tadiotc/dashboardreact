@@ -1,0 +1,133 @@
+#busc_inp_aol {
+    height: 100%;
+    border-radius: 10px 0 0 10px !important;
+    border: 2px solid #dcdcdc !important;
+    display: flex !important;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+#busc_inp_aol:focus {
+    border-color: var(--cor-header) !important;
+    outline: none !important;
+  }
+
+.titulo_pag_aol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo_pag_aol h2 {
+    color: var(--cor-header);
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.busca_aol {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+.busca_aol p {
+    margin: 0;
+    padding: 0;
+}
+
+.div_busc_aol {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    grid-template-columns: 10fr 1fr;
+    margin-left: 1rem;
+}
+
+#busc_inp_aol {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.btn_busca_aol {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-header);
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+.btn_busca_aol:hover {
+    background-color: black;
+}
+
+.lup_ico_aol {
+    width: 20px;
+}
+
+
+
+@media (max-width: 1000px){
+
+
+    .titulo_pag_aol {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .titulo_pag_aol h2 {
+        color: var(--cor-header);
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+
+}
+
+
+
+@media (max-width: 768px){
+
+    .busca_aol {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        flex-direction: column;
+    }
+    .busca_aol p {
+        padding-left: 1.3rem;
+    }
+
+    .titulo_pag_aol {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .titulo_pag_aol h2 {
+        color: var(--cor-header);
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+
+}

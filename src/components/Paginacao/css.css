@@ -1,0 +1,194 @@
+
+.pag_bt_content_aol {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pag_aol{
+    display: flex;
+}
+.pag_controls_aol{
+    display: flex;
+}
+
+.pag_nex_aol, .pag_prev_aol{
+    cursor: pointer;
+}
+.pag_nex_aol, .pag_prev_aol, .pag_num_pages_aol, .bts_retorna, .pag_prim_aol, .pag_ult_aol{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid #a80532 !important;
+    color: #a80532 !important;
+    font-size: .92rem !important;
+    text-transform: uppercase !important;
+    border-radius: 5px !important;
+    padding: 0.5rem 1rem !important;
+    background-color: #fff !important;
+    transition: all .1s ease-in-out !important;
+    margin: 0 !important;
+}
+
+.pag_ult_aol{
+    margin-left: 0.5rem !important;
+    cursor: pointer !important;
+}
+.pag_prim_aol{
+    margin-right: 0.5rem !important;
+    cursor: pointer !important;
+}
+.pag_ult_aol img{
+    width: 15px;
+}
+.pag_prim_aol img{
+    width: 15px;
+}
+.bts_retorna{
+    cursor: pointer !important;
+}
+
+.pag_nex_aol:hover, .pag_prev_aol:hover, .bts_retorna:hover, .pag_prim_aol:hover, .pag_ult_aol:hover{
+    color: #fff !important;
+    background-color:#a80532 !important;
+    transition: all .1s ease-in-out !important;
+}
+.svgfl{fill:#B1223C;}
+
+.pag_prim_aol:hover .svgfl, .pag_ult_aol:hover .svgfl{
+    fill:#fff !important;
+}
+
+.pag_num_pages_aol {
+    margin-left: 0.5rem !important;
+}
+
+.pag_num_aol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 65px;
+    padding: 0.9rem 0.2rem 0.9rem 0.9rem  ;
+    font-size: .875rem!important;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    color: #919191!important;
+    margin: 0 0.5rem;
+}
+.pag_num_aol:focus {
+    border-color: var(--cor-header);
+    outline: none;
+  }
+
+  .pag_num_pages_aol{
+    margin-left: 0.5rem ;
+}
+
+.insert_aol {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+.btn_inserir_aol {
+    background-color: var(--cor-mendetail);
+    padding: 0.5rem 1.5rem;
+    color: #fff!important;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 47px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.btn_inserir_aol:hover {
+    background-color: var(--cor-menhover);
+    transition: all .1s ease-in-out;
+}
+
+@media (max-width: 1000px){
+
+
+    .pag_bt_content_aol {
+        display: flex;
+        justify-content: start;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .pag_aol {
+        display: flex;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .pag_controls_aol {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+
+    .pag_bt_content_aol {
+        display: flex;
+        justify-content: start;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .pag_aol {
+        display: flex;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .pag_controls_aol {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .pag_ult_aol{
+        margin-left: 0.5rem !important;
+        cursor: pointer !important;
+        order: 6;
+        margin-top: 1rem !important;
+    }
+    .pag_prim_aol{
+        margin-right: 0.5rem !important;
+        cursor: pointer !important;
+        order: 5;
+        margin-top: 1rem !important;
+    }
+    .pag_nex_aol, .pag_prev_aol{
+        width: 35%;
+    }
+
+
+
+}

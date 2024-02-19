@@ -1,0 +1,279 @@
+.tabela_aol {
+    margin-top: 3rem;
+}
+
+.tab_header_aol {
+    background-color: var(--cor-menhover);
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    display: grid;
+
+}
+
+.tab_row_aol {
+    min-height: 50px;
+    background-color: #ffffff;
+    display: grid;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+    word-break: break-all;
+}
+
+
+.trescasas .tabheader_int_aol:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+.trescasas .tab_row_int_aol:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+
+.tab_row_int_aol:last-child{
+    display: flex;
+    justify-content: space-around !important;
+
+}
+
+.trescasas{
+    grid-template-columns:1fr 1fr 1fr 0.2fr;
+}
+.duascasas{
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+.quatrocasas{
+    grid-template-columns: .5fr .5fr 1.5fr 2fr .4fr;
+}
+.quatrocasas2{
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr .4fr;
+}
+.quatrocasas2 .tabheader_int_aol:nth-child(1),
+.quatrocasas .tabheader_int_aol:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+.quatrocasas2 .tab_row_int_aol:nth-child(1)
+.quatrocasas .tab_row_int_aol:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+.tab_spa_aol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tab_header_aol div {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    padding-left: 0.5rem;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.tab_header_aol div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
+.tab_row_aol div{
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    padding-left: 0.6rem;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.tab_spa_aol{
+    text-align: center;
+    display: flex;
+    justify-content: space-around !important;
+    padding-left: 0.6rem;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.trash_ico_aol,
+.pencil_ico_aol  {
+    position: relative;
+    cursor: pointer;
+}
+.trash_ico_aol img,
+.pencil_ico_aol img {
+    width: 20px;
+}
+
+.trash_ico_aol:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+
+.trash_ico_aol::after {
+    color: gray;
+    content: 'Apagar registro';
+    padding: 0.5rem 0.7rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    top: -45px;
+    left: -54px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    text-wrap: nowrap;
+}
+
+.pencil_ico_aol:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pencil_ico_aol::after {
+    color: gray;
+    content: 'Editar registro';
+    padding: 0.5rem 0.7rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    top: -45px;
+    left: -54px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    text-wrap: nowrap;
+}
+
+.tab_row_aol:last-child{
+    border-radius: 0 0 10px 10px !important;
+}
+
+@media (max-width: 1000px){
+    .tab_row_aol {
+        min-height: 50px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .tab_row_aol div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 0.6rem;
+        align-items: center;
+        font-size: .9rem;
+        padding: 1rem 1rem;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .tab_spa_aol {
+        justify-content: space-evenly !important;
+    }
+
+
+}
+
+
+@media (max-width: 768px){
+    .tab_row_aol {
+        min-height: 50px;
+        background-color: #fff;
+        display: grid;
+        align-items: center;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .trescasas{
+        grid-template-columns: 1fr 1fr;
+    }
+    .tab_header_aol.trescasas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .duascasas{
+        grid-template-columns: 1fr 1fr;
+    }
+    .quatrocasas, .quatrocasas2{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .tab_row_aol div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 0.6rem;
+        align-items: center;
+        font-size: .9rem;
+        padding: 1rem 1rem;
+    }
+    .tab_row_aol div:nth-child(1) {
+        order: 3 !important;
+    }
+    .tab_row_aol div:nth-child(4) {
+        order: 1 !important;
+    }
+
+    .tab_spa_aol {
+        justify-content: space-evenly !important;
+    }
+
+    .tabela_aol {
+        margin-top: 2rem;
+    }
+
+    .tab_header_aol.quatrocasas div:nth-child(1),
+    .tab_header_aol.quatrocasas2 div:nth-child(1){
+        display: none;
+    }
+    .tab_header_aol.quatrocasas div, 
+    .tab_header_aol.quatrocasas2 div{
+        justify-content: center;
+    }
+    .tab_row_aol.quatrocasas div:nth-child(1), 
+    .tab_row_aol.quatrocasas2 div:nth-child(1){
+        display: none;
+    }
+
+    .trescasas .tabheader_int_aol:nth-child(1){
+        display: flex;
+        justify-content: center;
+        padding-left: 1.5rem;
+    }
+    
+    .trescasas .tab_row_int_aol:nth-child(1){
+        display: flex;
+        justify-content: center;
+        padding-left: 1.5rem;
+    }
+    
+}
+
+/* // Smartphones pequenos (Portrait e Landscape):
+// 320px
+// 360px
+
+// Smartphones maiores (Portrait e Landscape):
+// 375px (por exemplo, iPhone 6/7/8)
+// 414px (por exemplo, iPhone 6/7/8 Plus)
+
+// Tablets:
+// 768px (por exemplo, iPad em modo retrato)
+// 1024px (por exemplo, iPad em modo paisagem)
+// Desktops e laptops:
+
+// 1280px
+// 1366px
+// 1440px
+// 1920px */

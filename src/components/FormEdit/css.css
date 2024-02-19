@@ -1,0 +1,30 @@
+.boxregistros {
+    background-color: #E2E1E1;
+    width: 98%;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.dadosinclusao, .dadosedicao {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+@media (max-width: 768px){
+
+    .boxregistros {
+        background-color: #e2e1e1;
+        width: 95%;
+        padding: 2rem;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 1rem;
+    }
+
+
+}
+

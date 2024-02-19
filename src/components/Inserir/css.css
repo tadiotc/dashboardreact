@@ -1,0 +1,89 @@
+.pagina_in {
+    position: relative;
+    background-color: var(--cor-fundobody)!important;
+    width: 100%;
+    min-width: 100%;
+    display: none;
+}
+.entraedit{
+    display: block !important;
+    left: -100%;
+    opacity: 0;
+    animation: entramod .5s forwards ease-in-out;
+}
+.entramain{
+    animation: saimod .5s forwards ease-in-out;
+}
+.saiedit{
+    animation: saimod 1s forwards ease-in-out;
+}
+@keyframes entramod {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes saimod {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+.pagina_in_show{
+    left: 0% !important;
+}
+.pagina_in_hide{
+    left: 150% !important;
+}
+
+.a_volta{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titulo_pag_aol h2 a {
+    color: var(--cor-header);
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.titulo_pag_aol h2 a:hover {
+    color: var(--cor-header);
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.secao_pag_aol{
+    color: gray !important;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pading_mob{
+    padding-top: 5rem;
+}
+
+@media (max-width: 768px){
+
+    .pading_mob{
+        padding-top: 0;
+    }
+
+    .titulo_pag_in {
+        margin-top: 4.5rem;
+    }
+
+    .pading_mob{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+
+}
+
